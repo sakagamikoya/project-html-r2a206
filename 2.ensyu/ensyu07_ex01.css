@@ -1,0 +1,16 @@
+table{
+  border: 1px solid #000000;
+  border-collapse:collapse ;
+}
+tbody{
+  border: 1px solid #000000;
+}
+th{
+  background: #e0ec5c;
+  padding: 10px;
+  border: 1px solid #000000;
+}
+td{
+  padding: 10px;
+  border: 1px solid #000000;
+}
