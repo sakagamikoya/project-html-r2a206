@@ -26,7 +26,7 @@ img {
 }
 
 .section:nth-of-type(odd) {
-  background-color: #fff;
+  background: color #fff;
 }
 
 .inner {
@@ -138,6 +138,8 @@ img {
   line-height: 1.2;
   margin-bottom: 5px;
   letter-spacing: 0.1em;
+  font-family: Hiragino Sans;
+  color: #333;
 }
 
 .main-visual-subtitle {
@@ -196,6 +198,9 @@ img {
 /*--------------------------------
 Works
 ---------------------------------*/
+.works-section:nth-child(even){
+  background-color: #f7f7f7;
+}
 .works-list {
   display: flex;
   flex-wrap: wrap;
@@ -212,7 +217,7 @@ Works
 }
 
 .works-img img {
-  border: 1px solid #e6e6e6;
+  border: 1px solid #fff;
 }
 
 .btn-denim {
@@ -230,21 +235,37 @@ Works
   /* box-shadowで外枠を */
 }
 
+a:hover{
+  border: solid 1px #fff;
+  color: #fff;
+  background-color: #ccc;
+}
+
+a:hover::before{
+  transform: scale(1);
+  opacity:0.6;
+}
+
 .btn-box {
   display: inline-block;
   max-width: 180px;
   text-align: center;
   font-size: 16px;
-  color: #9ec34b;
+  color: #574bc3;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
   position: relative;
-  border: 2px solid #9ec34b;
+  border: 2px solid #c34b9f;
   transition: 0.4s;
 }
 
 .btn-box:hover {
+  border: 2px solid transparent;
+  color: #000;
+}
+
+.btn-box:hover{
   border: 2px solid transparent;
   color: #000;
 }
@@ -352,4 +373,85 @@ About
   font-size: 10px;
   text-align: center;
   color: #000;
+}
+
+table{
+  font-size: 1.2em;
+  width: 60%;
+}
+
+table tr:nth-child(odd){
+  background-color: #f7f7f7;
+}
+
+th{
+  padding:10px;
+}
+td{
+  padding:10px;
+}
+
+.photo{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  width:150px;
+}
+
+.photo img{
+  width: 350%;
+  margin-top: 10px ;
+}
+@media screen and (max-width:780px) {
+  .photo-from{
+  flex-direction: column;
+  }
+}
+
+.contact-item input{
+  padding: 5px;
+  border: 5px;
+  border-radius:5px ;
+  border:1px solid #ccc;
+  width: 100%;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin:0 auto;
+}
+
+.from-title{
+  margin-bottom: 2px;
+  font-size: 1.2rem;
+}
+
+.must{
+  margin-left:5px;
+  padding: 2px;
+  font-size: 1.2rem;
+  background-color: aqua;
+  color: #fff;
+  border-radius:5px ;
+  border: 1px solid#ccc;
+}
+
+.btn{
+  width: 100%;
+  padding: 10px 50px;
+  background-color: #574bc3;
+  font-size: 1.2rem;
+  color: #f7f7f7;
+  font-weight:bold;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+
+
+
+
 }
